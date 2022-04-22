@@ -1,0 +1,37 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+.title{
+  text-align: center;
+  padding: 40px;
+  margin-bottom: 50px;
+  font-size: 50px;
+  background-color: rgb(197, 226, 199);
+}
+
+.proj-1{
+    height: 100%;
+    display: grid;
+    grid-gap: 55px;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        ". a b ."
+        ". c c ."
+}
+
+.chart-1 {
+    grid-area: a;
+    width: 50%;
+}
+
+.chart-2 {
+    grid-area: b;
+}
+
+.movie{
+  grid-area: c;
+}

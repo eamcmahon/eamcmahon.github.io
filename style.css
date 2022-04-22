@@ -1,0 +1,271 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* NAVBAR CSS */
+nav{
+    padding-left: 4em;
+    padding-right: 4em;
+    width: 100%;
+    top:0;
+    left:0;
+    z-index:10;
+    background-color: rgb(255, 255, 255);
+  }
+
+  nav ul {
+    margin:0;
+    padding:0;
+    display:flex;
+  }
+  
+  nav li{
+    padding: 1em 0;
+    list-style-type: none;
+    padding: 25px;
+  }
+  
+  nav li a {
+    color:black;
+    font-weight: 400;
+    font-size: 1.3em;
+    text-decoration: none;
+    transition: .3s;
+  }
+  
+  nav li a:hover {
+    color:rgb(197, 226, 199);
+    opacity: 1;
+    text-decoration: none;
+  }
+
+svg{
+  margin-top: -45px;
+}
+
+.sun{
+  width: 4in;
+  margin: auto;
+}
+
+#flares{
+  animation: flares 4s;
+  transform-origin: -.6in;
+  transform-box: fill-box;
+}
+
+@keyframes flares{
+  from{
+      transform: rotateZ(0deg);
+  }
+  to{
+      transform: rotateZ(360deg);
+  }
+}
+
+.header {
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.welcome{
+    margin-top: 1vh;
+    text-align: center;
+    font-weight: 600;
+    font-size: 4em;
+    color: black
+  }
+
+.title{
+  margin-top: 2vh;
+  text-align: center;
+  font-weight: 400;
+  font-size: 2.5em;
+  color: black
+}
+
+/* IMAGE GALLERY CSS */
+.image-gallery {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr minmax(350px, 1fr)  minmax(350px, 1fr) minmax(350px, 1fr) 1fr;
+    grid-template-rows: auto;
+    grid-gap: 7px;
+    padding-top: 200px;
+    /* padding-bottom: 100px; */
+    grid-template-areas:
+    ". a b c ."
+    /* ". c d ." */
+    ;
+}
+
+.box-styling {
+    height: 300px;
+    width: 300px;
+    background-color: white;
+  }
+
+.box-wrapper{
+  height: 300px;
+  width: 300px;
+  border-radius: 3%;
+}
+
+.box1 {
+    grid-area: a;
+}
+
+.box2 {
+    grid-area: b;
+}
+
+.box3 {
+    grid-area: c;
+}
+
+
+/* ABOUT ME CSS*/
+.about-me {
+    height: 100% !important;
+    background-color: rgb(197, 226, 199) !important;
+    padding: 10vh 50px 10vh 50px;
+}
+
+.about-me img{
+  width: 60%;
+  border-radius: 8%;
+}
+
+.resume{
+  text-decoration: none;
+  padding: 8px;
+  background-color: black;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(197, 226, 199);
+}
+
+.resume:hover{
+  color: black;
+}
+
+.me-p{
+margin-bottom: 30px;
+}
+
+.about-me {
+  display: grid;
+  /* grid-gap: 2px; */
+  grid-template-columns: 1fr 1fr;
+  /* grid-template-rows: auto; */
+  grid-template-areas: 
+      "a b";
+}
+
+@media screen and (max-width: 800px) {
+
+  .about-me{
+      display: grid;
+      /* grid-gap: .5px; */
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      grid-template-areas:
+      "a"
+      "b";
+  }
+  .about-me img{
+    width: 50%;
+    border-radius: 8%;
+  }
+}
+
+.image {
+  grid-area: a;
+}
+
+.text{
+  grid-area: b;
+}
+
+/* the span tag that wrap starts off my paragraph */
+.bigText {
+  font-size:4em;
+  padding-right:.5em;
+}
+
+   /* footer section */
+   footer{
+    grid-area:footer;
+    height: 70px;
+  }
+  footer p{
+    font-size:1em;
+  }
+  footer li {
+    display:inline;
+  }
+  footer ul {
+    max-width: 640px;
+    margin: 2em auto;
+    padding:0;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+  }
+  footer ul li{
+    list-style: none;
+    align-self:flex-end;
+  }
+  footer ul li a {
+    text-decoration:none;
+    color: black;
+    transition: .3s;
+  }
+  footer ul li a:hover {
+    text-decoration:none;
+    color:rgb(197, 226, 199);
+  }
+  footer svg {
+    width:25%;
+  }
+
+
+  /* MEDIA QUERY FOR SMALL SCREENS */
+ @media (max-width:1100px){
+    .image-gallery {
+      padding-bottom: 100px;
+      padding-top: 50px;
+        grid-template-columns: 1fr minmax(350px, 1fr) minmax(350px, 1fr) 1fr;
+        grid-template-areas:
+        ". a b ."
+        ". c c ."
+        ;
+    }
+ }
+
+/* MEDIA QUERY FOR MOBILE */
+ @media (max-width:735px){
+    .image-gallery {
+        padding-bottom: 70%;
+        grid-gap: 40px;
+        grid-template-columns: 1fr minmax(350px, 1fr) 1fr;
+        grid-template-areas:
+        ".a."
+        ".b."
+        ".c."
+        ;
+    }
+ }
+
+
+
