@@ -69,7 +69,7 @@ p{
       "d f";
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 735px) {
 
   .container{
       display: grid;

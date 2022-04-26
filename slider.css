@@ -7,11 +7,59 @@ img {
     margin-right: auto;
   }
 
+/* NAVBAR CSS */
+nav{
+  padding-left: .3em;
+  padding-right: 4em;
+  width: 100%;
+  height: 90px;
+  top:0;
+  left:0;
+  z-index:10;
+  background-color: rgba(197, 226, 199, .6);
+}
+
+nav ul {
+  padding:0;
+  display:flex;
+}
+
+nav li{
+  padding: 1em 0;
+  list-style-type: none;
+  padding: 25px;
+}
+
+nav li a {
+  color:black;
+  font-weight: 400;
+  font-size: 1.3em;
+  text-decoration: none;
+  transition: .3s;
+}
+
+nav li a:hover {
+  color:white;
+  text-decoration: none;
+}
+
+.home{
+  margin-top: -15px;
+  width: .8in;
+}
+.home:hover{
+  fill:white;
+}
+.words{
+  margin-top: 5px;
+}
+
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
   position: relative;
   margin: auto;
+  margin-top: 18px;
 }
 
 /* Next & previous buttons */
@@ -40,10 +88,6 @@ img {
 .prev:hover, .next:hover {
   color: rgba(0,0,0,0.5);
 }
-
-
-
-
 
 /* The dots/bullets/indicators */
 .dot {
@@ -84,13 +128,13 @@ img {
   .prev, .next,.text {font-size: 11px}
 }
 
-h2{position: relative;
+/* h2{
+    position: relative;
     font-family: 'Work Sans', sans-serif;
     font-size: 50px;
-    background-color: rgb(197, 226, 199);
     width: 100%;
     padding: 10px;
     text-align: center;
     margin-top: -8px;
     margin-bottom: 10px;
-}
+} */

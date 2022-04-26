@@ -11,7 +11,7 @@ img {
 
 /* NAVBAR CSS */
 nav{
-    padding-left: 4em;
+    padding-left: .3em;
     padding-right: 4em;
     width: 100%;
     top:0;
@@ -21,7 +21,6 @@ nav{
   }
 
   nav ul {
-    margin:0;
     padding:0;
     display:flex;
   }
@@ -42,17 +41,24 @@ nav{
   
   nav li a:hover {
     color:rgb(197, 226, 199);
-    opacity: 1;
     text-decoration: none;
   }
 
-svg{
-  margin-top: -45px;
-}
+  .home{
+    margin-top: -15px;
+    width: .8in;
+  }
+  .home:hover{
+    fill:rgb(197, 226, 199);
+  }
+  .words{
+    margin-top: 5px;
+  }
 
 .sun{
   width: 4in;
   margin: auto;
+  margin-top: -45px;
 }
 
 #flares{
@@ -256,7 +262,7 @@ margin-bottom: 30px;
 /* MEDIA QUERY FOR MOBILE */
  @media (max-width:735px){
     .image-gallery {
-        padding-bottom: 70%;
+        padding-bottom: 80%;
         grid-gap: 40px;
         grid-template-columns: 1fr minmax(350px, 1fr) 1fr;
         grid-template-areas:
